@@ -1,0 +1,87 @@
+<div class="Registro">
+<ion-header>
+  <ion-navbar>
+    <ion-title class="cardH" >Registrar</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <ion-card class="card">
+    <ion-card-header class="cardH">Llena Todos los Datos</ion-card-header>
+    <ion-card-content>
+      
+        
+          <div class="imgC"> <img *ngIf="this.tomoFoto" src="{{this.foto}}" style="width:80px;height:80px;"></div>
+         
+        
+      
+      <ion-item class="card">
+        <ion-label floating>Nombre</ion-label>
+        <ion-input type="text" [(ngModel)]="Ruser.nombre" required></ion-input>
+        </ion-item>
+        <ion-item class="card"> 
+        <ion-label floating>Email</ion-label>
+        <ion-input type="text" [(ngModel)]="Ruser.email" requiered ></ion-input>
+        </ion-item>
+        <ion-item class="card">
+        <ion-label floating >Contraseña  [6 caracteres minimo!]</ion-label>
+        <ion-input type="password" [(ngModel)]="Ruser.password" requiered></ion-input>
+        </ion-item>
+
+         <button ion-button block (click)="tomarFoto()" class="buttonM"><ion-icon slot="camera "name="camera " class="i">
+
+         </ion-icon>Tomar foto</button>
+        <button  ion-button block (click)="Galeria()" class="buttonM" ><ion-icon slot="images "name="images" class="i">
+
+        </ion-icon>Escoger de la Galeria</button>
+        
+        
+        
+        
+        <button ion-button block (click)="registrar()" class="buttonM"><ion-icon slot="open" name="open" class="i">
+
+        </ion-icon>Registrar</button>
+        <button ion-button block color="danger" (click)="closeModal()" ><ion-icon slot="trash "name="trash" class="i">
+
+        </ion-icon>Cancelar</button>
+    </ion-card-content>
+  </ion-card>
+   
+        
+
+
+  <!--
+<ion-navbar>
+<ion-title>LLena Todos Los Datos</ion-title>
+</ion-navbar>
+
+<ion-item>
+<ion-label floating>Nombre</ion-label>
+<ion-input type="text" [(ngModel)]="Ruser.nombre" required></ion-input>
+</ion-item>
+<ion-item>
+<ion-label floating>Email</ion-label>
+<ion-input type="text" [(ngModel)]="Ruser.email" requiered ></ion-input>
+</ion-item>
+<ion-item>
+<ion-label floating >Contraseña  [6 caracteres minimo!]</ion-label>
+<ion-input type="password" [(ngModel)]="Ruser.password" requiered></ion-input>
+</ion-item>
+
+
+<button ion-button block (click)="tomarFoto()">Tomar foto</button>
+<button ion-button block (click)="Galeria()">Escoger de la Galeria</button>
+
+<ion-item *ngIf="this.tomoFoto">
+  <img src="{{this.foto}}">
+</ion-item>
+
+
+<button ion-button block (click)="registrar()">Registrar</button>
+<button ion-button block color="danger" (click)="closeModal()">Cancelar</button>
+
+
+-->
+</ion-content>
+</div>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "775672341242",
+    "firebase_url": "https://lcc-chat.firebaseio.com",
+    "project_id": "lcc-chat",
+    "storage_bucket": "lcc-chat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775672341242:android:ffa3be9c9c705d07",
+        "android_client_info": {
+          "package_name": "fcfm.Chat.lcc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775672341242-fpb2s0mvvgc930lc8e15bspcq3urdi3b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL2AcZa4Z1MkhvKMjA0-_5UWWv9mRFiBk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "775672341242-fpb2s0mvvgc930lc8e15bspcq3urdi3b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
